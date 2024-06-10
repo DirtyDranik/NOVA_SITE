@@ -1,0 +1,504 @@
+$accent: #CE3147
+$mainBlack: #181818
+
+// Переменные
+
+// Основные стили
+body
+    font-family: NoirPro
+    overflow-x: hidden
+h1,
+h2,
+h3,
+h4,
+h5,
+p
+    margin: 0
+
+button
+    border: none
+    cursor: pointer
+
+
+.container
+    width: 1640px
+    margin: 0 auto
+.containerSmall
+    width: 1360px
+    margin: 0 auto
+
+ul,li
+    list-style-type: none
+    padding: 0
+
+a
+    text-decoration: none
+
+// Основные стили
+
+
+// Main
+
+.opacityMain
+    animation: opacityAnim 3s 1
+    animation-fill-mode: forwards
+    animation-delay: 2.5s
+
+.main
+    padding-top: 50px
+    display: flex
+    justify-content: space-between
+    &__left
+        opacity: 0%
+        pointer-events: none
+        &-ahref
+            width: 222px
+            height: 78px
+            display: block
+        &-h1
+            font-family: NoirPro
+            font-weight: 600
+            text-transform: uppercase
+            font-size: 100px
+            line-height: 142px
+            color: $mainBlack
+            margin: 140px 0 10px 0
+        &__block
+            width: 736px
+            justify-content: space-between
+            display: flex
+            &-vertText
+                font-family: 'Abhaya Libre', serif
+                font-weight: 800
+                font-size: 30px
+                line-height: 35px
+                letter-spacing: 0.15em
+                transform: rotate(180deg)
+                writing-mode: tb-rl
+                margin-top: 17px
+            &__subtitle
+                width: 607px
+                font-family: "Commissioner"
+                color: $mainBlack
+                line-height: 29px
+                font-size: 24px
+                &-topText
+                    font-weight: 600
+                    margin-bottom: 10px
+                &-botText
+                    width: 599px
+                    font-weight: 400
+                    margin-bottom: 80px
+                &__buttons
+                    width: 607px
+                    display: flex
+                    justify-content: space-between
+                    height: 61px
+                    font-weight: 500
+                    &-buttonLeft
+                        color: white
+                        background: $accent
+                        width: 263px
+                        transition: 0.3s all
+                        &:hover
+                            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25)
+                    &-buttonRight
+                        outline: 1px solid $mainBlack
+                        background: none
+                        width: 304px
+                        transition: 0.2s all
+                        &:hover
+                            color: white
+                            background: $mainBlack
+                            transition: 0.2s all
+    &__right
+        display: flex
+        flex-direction: column
+        align-items: end
+        &__slogans
+            opacity: 0%
+            text-align: right
+            font-weight: 600
+            font-size: 24px
+            line-height: 49px
+            margin: 47px 0 107px 0
+            width: 342px
+            height: 242px
+            color: $mainBlack            
+        &-figure
+            width: 486px
+            height: 380.01px
+            pointer-events: none
+            margin-right: 140px
+            animation: figureAnim 2.5s 1
+// Main
+
+
+// Клиенты
+
+.clients
+    background: $mainBlack
+    height: 1700px
+    margin-top: 105px
+    &__image
+        pointer-events: none
+    &__head
+        opacity: 0
+
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding: 100px 0 50px 0
+        &-h2
+            font-weight: 700
+            font-size: 48px
+            line-height: 70px
+            color: white
+            text-transform: uppercase
+        &-line
+            border-bottom: 2px solid #FFFFFF
+            margin-bottom: 14px
+            width: 1180px
+    &__blockTop
+        opacity: 0
+        margin-bottom: 40px
+        display: flex
+        justify-content: space-between
+        &-moreButton
+            width: 440px
+            height: 418px
+            transition: 0.5s all
+            background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0.05) 100%)
+            text-align: center
+            font-weight: 700
+            font-size: 36px
+            line-height: 45px
+            letter-spacing: 0.095em
+            color: rgba(255, 255, 255, 0.75)
+            &:hover
+                color: $accent
+                font-size: 40px
+                filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25))
+    &__blockBot
+        opacity: 0
+        display: flex
+        justify-content: space-between
+        &-left
+            width: 1160px
+        &__top
+            display: flex
+            justify-content: space-between
+            margin-bottom: 40px
+        &__bot
+            background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0.05) 100%)
+            padding: 35px 85px 77px 65px
+            &-text
+                font-family: "Commissioner"
+                font-weight: 100
+                font-size: 24px
+                line-height: 44px
+                color: white
+                &-span
+                    font-family: "Simsun"
+    &__buttons
+        opacity: 0
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+        &-button
+            background: rgba(196, 196, 196, 0.1)
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+            border-radius: 10px
+            padding: 0
+            padding-top: 4px
+        &-buttonLeft
+            width: 700px
+            height: 78px
+        &-buttonRight
+            width: 900px
+            height: 78px  
+// Клиенты
+
+// Почему мы
+
+.why
+    font-weight: 700
+    margin-top: 100px
+    margin-bottom: 132px
+    &-h2
+        opacity: 0
+        font-size: 48px
+        line-height: 70px
+        text-transform: uppercase
+        margin-bottom: 50px
+    &-wrap
+        opacity: 0
+        display: flex
+        justify-content: space-between
+        line-height: 52px
+        font-size: 36px 
+        text-align: center
+    &__block1
+        display: flex
+        width: 605px
+        height: 252px
+        background: rgba(24, 24, 24, 0.75)
+        &-inside
+            height: 52px
+            padding: 75px 50px
+            background: $mainBlack
+            color: #FFFFFF
+            transition: 1s all
+            &-text
+                width: 505px
+            &:hover
+                background: $accent
+                transition: 1s all
+                padding: 100px 50px
+    &__block2
+        background: rgba(24, 24, 24, 0.75)
+        width: 985px
+        display: flex
+        &-inside
+            padding: 75px 50px
+            max-width: 720px
+            background: $mainBlack
+            color: #FFFFFF
+            transition: 1s all
+            &-text
+                width: 620px
+            &:hover
+                padding: 75px 182.5px
+                background: $accent
+                transition: 1s all
+    &__block3
+        display: flex
+        background: rgba(24, 24, 24, 0.75)
+        width: 601px
+        height: 358px
+        &-inside
+            height: 52px
+            padding: 75px 50px
+            background: $mainBlack
+            color: #FFFFFF
+            transition: 1s all
+            &-text
+                width: 501px
+            &:hover
+                padding: 153px 50px
+                background: $accent
+                transition: 1s all
+    &__block4
+        display: flex
+        justify-content: end
+        background: rgba(24, 24, 24, 0.75)
+        width: 989px
+        &-inside
+            padding: 75px 50px
+            background: $mainBlack
+            color: #FFFFFF
+            transition: 1s all
+            &-text
+                width: 501px
+            &:hover
+                padding: 75px 244px
+                background: $accent
+                transition: 1s all
+    &__block5
+        display: flex
+        justify-content: end
+        background: rgba(24, 24, 24, 0.75)
+        width: 800px
+        &-inside
+            padding: 75px 50px
+            background: $mainBlack
+            color: #FFFFFF
+            transition: 1s all
+            &-text
+                width: 501px
+            &:hover
+                padding: 75px 149.5px
+                background: $accent
+                transition: 1s all
+    &__block6
+        display: flex
+        background: rgba(24, 24, 24, 0.75)
+        width: 800px
+        &-inside
+            padding: 75px 50px
+            background: $mainBlack
+            color: #FFFFFF
+            transition: 1s all
+            &-text
+                width: 501px
+            &:hover
+                padding: 75px 149.5px
+                background: $accent
+                transition: 1s all
+                
+                
+
+// Почему мы
+
+
+// Contact
+
+.contact
+    background: $mainBlack
+    padding-bottom: 150px
+    &-h2
+        opacity: 0
+        padding: 68px 0 50px 0
+        font-weight: 700
+        font-size: 48px
+        line-height: 70px
+        color: white
+    &__content
+        opacity: 0
+        display: flex
+        justify-content: space-between
+        width: 940px
+        &__left
+            width: 380px
+            height: 472px
+            background: linear-gradient(270deg, rgba(196, 196, 196, 0.5) 0%, rgba(196, 196, 196, 0) 100%)
+        &__right
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 520px
+            height: 472px
+            &-inputText
+                padding-bottom: 10px
+                color: white
+                font-weight: 400
+                font-size: 36px
+                line-height: 51px
+                background: none
+                border: none
+                border-bottom: 11px solid rgba(196, 196, 196, 0.5)
+                &:focus
+                    outline: none
+            &-inputNumber
+                padding-bottom: 10px
+                color: white
+                font-weight: 400
+                font-size: 36px
+                line-height: 51px
+                background: none
+                border: none
+                border-bottom: 11px solid rgba(196, 196, 196, 0.5)
+                &:focus
+                    outline: none
+            &-button
+                font-family: "Commissioner"
+                width: 520px
+                height: 61px
+                background: $accent
+                font-weight: 500
+                font-size: 24px
+                line-height: 29px
+                color: #FFFFFF
+// Contact
+
+
+// Footer
+
+.footer
+ background: $mainBlack
+    &__content
+        padding: 80px 0 90px 0
+    &-line
+        border-bottom: 5px solid rgba(255, 255, 255, 0.5)
+    &__top
+        width: 562px
+        display: flex
+        justify-content: space-between
+        &-textTop
+            display: flex
+            &-C
+                margin-right: 10px
+                font-family: 'Abhaya Libre', serif
+                font-weight: 800
+                font-size: 30px
+                line-height: 35px
+                letter-spacing: 0.15em
+                color: rgba(255, 255, 255, 0.75)
+            &-text
+                font-weight: 700
+                font-size: 22px
+                line-height: 32px
+                letter-spacing: 0.15em
+                color: rgba(255, 255, 255, 0.75)
+        &-textBot
+            margin-left: 33px
+            font-weight: 400
+            font-size: 22px
+            line-height: 31px
+            letter-spacing: 0.15em
+            color: rgba(255, 255, 255, 0.5)
+    &__mid
+        padding: 50px 0 50px 0
+        font-weight: 400
+        &-h3
+            margin-bottom: 10px
+            font-size: 22px
+            line-height: 31px
+            letter-spacing: 0.15em
+            color: rgba(255, 255, 255, 0.75)
+        &-email
+            font-size: 20px
+            line-height: 28px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            margin-bottom: 35px
+        &-address
+            width: 515px
+            font-size: 20px
+            line-height: 28px
+            letter-spacing: 0.05em
+            color: rgba(255, 255, 255, 0.5)
+    &__bot
+        &-ahrefs
+            color: white
+            display: flex
+            justify-content: space-between
+            width: 369px
+            &-ahref
+                font-weight: 600
+                font-size: 15px
+                line-height: 21px
+                letter-spacing: 0.05em
+                color: rgba(255, 255, 255, 0.5)
+                transition: 0.2s all
+                &:hover
+                    color: $accent
+                    transition: 0.2s all
+// Footer
+
+
+// Кейфреймы
+
+@keyframes figureAnim
+	0% 
+		transform: translate(1200px, 50%)
+
+@keyframes opacityAnim
+    from
+        opacity: 0%
+    to
+        opacity: 100%
+        pointer-events: auto
+        
+	
+// Кейфреймы
+        
+
+// Доп классы
+.element-show
+    opacity: 1 !important
+    transition: opacity 1s
+
+.footerForJs
+    opacity: 0
+// Доп классы

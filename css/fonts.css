@@ -1,0 +1,68 @@
+/* NoirPro */
+@font-face {
+    font-family: "NoirPro";
+    src: url("/fonts/NoirPro-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NoirPro";
+    src: url("/fonts/NoirPro-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "NoirPro";
+    src: url("/fonts/NoirPro-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Commissioner */
+@font-face {
+    font-family: "Commissioner";
+    src: url("/fonts/Commissioner-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Commissioner";
+    src: url("/fonts/Commissioner-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Commissioner";
+    src: url("/fonts/Commissioner-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Commissioner";
+    src: url("/fonts/Commissioner-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* SimSun */
+@font-face {
+    font-family: "Simsun";
+    src: url("/fonts/SIMSUN.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* 100 – Thin || Hairline
+200 – Extra Light || Ultra Light || Thin
+300 – Light
+400 – Normal || Regular
+500 – Medium
+600 – Semi Bold || Demi Bold
+700 – Bold
+800 – Extra Bold || Ultra Bold || Heavy
+900 – Black || Heavy */
